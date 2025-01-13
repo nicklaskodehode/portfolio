@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+    <script src="./script.js" defer></script>
     <title>Nicklas' Portfolio</title>
 </head>
 <body>
@@ -25,29 +26,30 @@
     </div>
     <div class="intro-pic">
         <div class="text">
-            <span class="border">Hvem er Nicklas?</span>
+            <span class="border">Nicklas Nielsen</span>
         </div>
     </div>
 
     
     <div class="main-content-container">
-
-
+    
+    
         <section class="presentation-container">
             <div style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 20px;">
-                <img src="./pictures/portrait.jpg" width="250px" height="250px">
+                <img src="./pictures/portrait.jpg" width="250px" height="250px" style="border-radius: 5px;">
                 <p>Jeg hedder Nicklas, jeg er 28 år og kommer fra Danmark. Jeg har gennem både arbejdserfaring
                     og kurs fået færdigheder inden for Figma, HTML, CSS, Javascript og React. Kurset er et
                     frontend development kurs hvor jeg både har genopfrisket og lært en masse nyt inden for
                     frontend udvikling.
-                
+    
                     <br><br>
                     Til dagligt bruger jeg min fritid på video editing, spille spil, følge med på de nyeste teknologier,
                     samt bruge tiden med min kæreste og vores 2 kaniner. Video editing giver mig en god måde at
                     kunne være kreativ på og noget jeg kan dykke ned i og bruge mange timer på af gangen.
                     Med en genopfriskning og ny læring af webudvikling er jeg igen klar til at komme ud på en
                     arbejdsplads og løse diverse problemer jeg får sendt min vej. Jeg glæder mig meget til at kunne
-                    komme i gang med at kunne hjælpe til i et team og vise hvad jeg kan.</p>
+                    komme i gang med at kunne hjælpe til i et team og vise hvad jeg kan.
+                </p>
             </div>
             <div class="competence">
                 <div class="hexagon">
@@ -66,74 +68,100 @@
                     <img class="hexagon-img" src="./pictures/hexddagon.png">
                     <p class="competence-react">React.js</p>
                 </div>
-                <div class="hexagon">
-                    <img class="hexagon-img" src="./pictures/hexddagon.png">
-                    <p class="competence-csharp">C#</p>
-                </div>
+            </div>
+            <div class="hexagon">
+                <img class="hexagon-img" src="./pictures/hexddagon.png">
+                <p class="competence-csharp">C#</p>
             </div>
         </section>
-
-
+    
+    
         <div class="javascript-pic">
             <div class="text">
                 <span class="border">Projekter</span>
             </div>
         </div>
-
-
+    
+    
         <section class="project-container">
             <div class="project-info">
                 <h3>Nordlys Tracking</h3>
-                <p class="project-text">Nordlys tracking giver en let måde at kunne få et overblik om der er mulighed for at kunne se nordlys</p>
+                <p class="project-text">Nordlys tracking giver en let måde at kunne få et overblik om der er mulighed for at
+                    kunne se nordlys</p>
                 <div class="link-container">
-                    <a class="github-link" href="https://github.com/nicklaskodehode/nordlys" target="_blank">Link til Github Projekt</a>
-                    <a class="github-link" href="https://nicklaskodehode.github.io/nordlys/" target="_blank">Link til demo</a>
+                    <a class="github-link" href="https://github.com/nicklaskodehode/nordlys" target="_blank">Link til Github
+                        Projekt</a>
+                    <a class="github-link" href="https://nicklaskodehode.github.io/nordlys/" target="_blank">Link til
+                        demo</a>
                 </div>
-                <img src="./pictures/nordlysProject.png" width="500px" height="380px">
+                <img src="./pictures/nordlysProject.png" width="550px" height="380px">
             </div>
             <div class="project-info">
-                <h3>Danske Specialiteter</h3>
-                <p class="project-text">På Danske Specialiteter kan man se nogle af de klassiske danske middagsretter</p>
+                <h3>Movie Maniac</h3>
+                <p class="project-text">På Movie Maniac kan man finde de nyeste og populærer film samt deres rating og
+                    beskrivelse</p>
                 <div class="link-container">
-                    <a class="github-link" href="https://github.com/nicklaskodehode/Flexbox-Project" target="_blank">Link til Github Projekt</a>
-                    <a class="github-link" href="https://nicklaskodehode.github.io/Flexbox-Project/" target="_blank">Link til demo</a>
+                    <a class="github-link" href="https://github.com/NicklasN96/moviemaniac" target="_blank">Link til Github
+                        Projekt</a>
+                    <!-- <a class="github-link" href="https://github.com/NicklasN96/moviemaniac" target="_blank">Link til demo</a> -->
                 </div>
-                <img src="./pictures/Flexbox example.png" width="500px" height="380px">
+                <img src="./pictures/movieManiac.png" width="550px" height="380px">
             </div>
         </section>
-
-
+    
+    
         <div class="projecs-link">
             <a class="github-link" href="./projekter.html">Se flere projekter her</a>
         </div>
-        
+    
         <div class="worksetting-pic">
             <div class="text">
                 <span class="border">Kontakt</span>
             </div>
         </div>
-
-        
+    
+    
         <section class="contact-container"> <!-- Sektion skal ændres til en kontaktform og ikke bare text -->
-            <p>Du kan fange mig på en af de følgende: </p>
-            <div class="contact-info">
-                <img src="./pictures/telephone.png" width="30px" alt="Linkedin icon">
-                <p>Tel: 
-                    <a href="tel:+4520843745">+4520843745</a>
-                </p>
+            <form class="contact-form">
+                <h2>Kontakt mig her!</h2>
+                <div class="contact-input">
+                    <label>Navn:</label>
+                    <input type="text" placeholder="Jane Doe" />
+                </div>
+                <div class="contact-input">
+                    <label>Telefon:</label>
+                    <input type="tel" placeholder="+46 12 34 56 78" />
+                </div>
+                <div class="contact-input">
+                    <label>Email:</label>
+                    <input type="email" placeholder="jane@doe.com" />
+                </div>
+                <div class="contact-input">
+                    <label>Melding:</label>
+                    <textarea placeholder="Skriv meldingen din her"></textarea>
+                </div>
+                <input type="submit"/>
+            </form>
+            <div class="contact-info-container">
+                <div class="contact-info">
+                    <img src="./pictures/telephone.png" width="30px" alt="Linkedin icon">
+                    <p>Tel:
+                        <a href="tel:+4520843745">+4520843745</a>
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <img src="./pictures/mail.png" width="30px" alt="mail icon">
+                    <p>Email:
+                        <a href="tel:email">nicklas.n@nielsen.mail.dk</a>
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <img src="./pictures/linkedin.png" width="30px" alt="phone icon">
+                    <a href="https://www.linkedin.com/in/nicklas-nielsen-b048b7141/" target="_blank">LinkedIn</a>
+                </div>
             </div>
-            <div class="contact-info">
-                <img src="./pictures/mail.png" width="30px" alt="mail icon">
-                <p>Email: 
-                    <a href="tel:email">nicklas.n@nielsen.mail.dk</a>
-                </p>
-            </div>
-            <div class="contact-info">
-                <img src="./pictures/linkedin.png" width="30px" alt="phone icon">
-                <a href="https://www.linkedin.com/in/nicklas-nielsen-b048b7141/" target="_blank">LinkedIn</a>
         </section>
-
-
+    
     </div>
 </body>
 </html>
