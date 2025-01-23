@@ -36,11 +36,9 @@
     
         <section class="presentation-container">
             <div style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 20px;">
-                <img src="./pictures/portrait.jpg" width="250px" height="250px" style="border-radius: 5px;">
-                <p>Jeg hedder Nicklas, jeg er 28 år og kommer fra Danmark. Jeg har gennem både arbejdserfaring
-                    og kurs fået færdigheder inden for Figma, HTML, CSS, Javascript og React. Kurset er et
-                    frontend development kurs hvor jeg både har genopfrisket og lært en masse nyt inden for
-                    frontend udvikling.
+                <img src="./pictures/portrait.jpg" width="250px" height="250px" style="border-radius: 100px;">
+                <p>Jeg hedder Nicklas, jeg er 28 år og kommer fra Danmark. Jeg har gennem min Computer Science uddannelse, 
+                    3 års arbejdserfaring og kurs fået færdigheder inden for Figma, HTML, CSS, Javascript, React.js og C#.
     
                     <br><br>
                     Til dagligt bruger jeg min fritid på video editing, spille spil, følge med på de nyeste teknologier,
@@ -53,25 +51,36 @@
             </div>
             <div class="competence">
                 <div class="hexagon">
-                    <img class="hexagon-img" src="./pictures/hexddagon.png">
-                    <p class="competence-html">HTML</p>
+                    <div class="hexagon-wrapper">
+                        <img class="hexagon-img" src="./pictures/hexddagon.png">
+                        <p class="competence-html">HTML</p>
+                    </div>
                 </div>
                 <div class="hexagon">
-                    <img class="hexagon-img" src="./pictures/hexddagon.png">
-                    <p class="competence-css">CSS</p>
+                    <div class="hexagon-wrapper">
+                        <img class="hexagon-img" src="./pictures/hexddagon.png">
+                        <p class="competence-css">CSS</p>
+                    </div>
                 </div>
                 <div class="hexagon">
-                    <img class="hexagon-img" src="./pictures/hexddagon.png">
-                    <p class="competence-js">Javascript</p>
+                    <div class="hexagon-wrapper">
+                        <img class="hexagon-img" src="./pictures/hexddagon.png">
+                        <p class="competence-js">Javascript</p>
+                    </div>
                 </div>
                 <div class="hexagon">
-                    <img class="hexagon-img" src="./pictures/hexddagon.png">
-                    <p class="competence-react">React.js</p>
+                    <div class="hexagon-wrapper">
+                        <img class="hexagon-img" src="./pictures/hexddagon.png">
+                        <p class="competence-react">React.js</p>
+                    </div>
                 </div>
             </div>
             <div class="hexagon">
-                <img class="hexagon-img" src="./pictures/hexddagon.png">
-                <p class="competence-csharp">C#</p>
+                <div class="hexagon-wrapper">
+                    <img class="hexagon-img" src="./pictures/hexddagon.png">
+                    <p class="competence-csharp">C#</p>
+                </div>
+            
             </div>
         </section>
     
@@ -82,36 +91,24 @@
             </div>
         </div>
     
-    
-        <section class="project-container">
-            <div class="project-info">
-                <h3>Nordlys Tracking</h3>
-                <p class="project-text">Nordlys tracking giver en let måde at kunne få et overblik om der er mulighed for at
-                    kunne se nordlys</p>
-                <div class="link-container">
-                    <a class="github-link" href="https://github.com/nicklaskodehode/nordlys" target="_blank">Link til Github
-                        Projekt</a>
-                    <a class="github-link" href="https://nicklaskodehode.github.io/nordlys/" target="_blank">Link til
-                        demo</a>
-                </div>
-                <img src="./pictures/nordlysProject.png" width="550px" height="380px">
+    <section class="project-container">
+        <div class="project-info">
+            <h2>Movie Maniac</h2>
+            <p class="project-text">På Movie Maniac kan du finde de nyeste og populærer film titler samt deres rating,
+                beskrivelse og sorter efter rating og udgivelsesdato. Dette project er lavet i React.js</p>
+            <div class="link-container">
+                <a class="github-link" href="https://github.com/NicklasN96/moviemaniac" target="_blank">Link til Github
+                    Repository</a>
+                <a class="github-link" href="https://nicklasn96.github.io/moviemaniac/" target="_blank">Link til demo</a>
             </div>
-            <div class="project-info">
-                <h3>Movie Maniac</h3>
-                <p class="project-text">På Movie Maniac kan man finde de nyeste og populærer film samt deres rating og
-                    beskrivelse</p>
-                <div class="link-container">
-                    <a class="github-link" href="https://github.com/NicklasN96/moviemaniac" target="_blank">Link til Github
-                        Projekt</a>
-                    <!-- <a class="github-link" href="https://github.com/NicklasN96/moviemaniac" target="_blank">Link til demo</a> -->
-                </div>
-                <img src="./pictures/movieManiac.png" width="550px" height="380px">
+            <div class="iframe-flex">
+                <iframe src="https://nicklasn96.github.io/moviemaniac/" class="frame"></iframe>
             </div>
-        </section>
-    
+        </div>
+    </section>
     
         <div class="projecs-link">
-            <a class="github-link" href="./projekter.html">Se flere projekter her</a>
+            <a class="github-link" style="font-size: 22px;" href="./projekter.html">Se flere projekter her</a>
         </div>
     
         <div class="worksetting-pic">
@@ -121,12 +118,12 @@
         </div>
     
     
-        <section class="contact-container"> <!-- Sektion skal ændres til en kontaktform og ikke bare text -->
-            <form class="contact-form">
+        <section class="contact-container">
+            <form class="contact-form" method="post">
                 <h2>Kontakt mig her!</h2>
                 <div class="contact-input">
                     <label>Navn:</label>
-                    <input type="text" placeholder="Jane Doe" />
+                    <input type="text" placeholder="Jane Doe" required/>
                 </div>
                 <div class="contact-input">
                     <label>Telefon:</label>
@@ -134,13 +131,13 @@
                 </div>
                 <div class="contact-input">
                     <label>Email:</label>
-                    <input type="email" placeholder="jane@doe.com" />
+                    <input type="email" placeholder="jane@doe.com" required/>
                 </div>
                 <div class="contact-input">
                     <label>Melding:</label>
-                    <textarea placeholder="Skriv meldingen din her"></textarea>
+                    <textarea placeholder="Skriv meldingen din her" required></textarea>
                 </div>
-                <input type="submit"/>
+                <input class="submitBtn" type="submit"/>
             </form>
             <div class="contact-info-container">
                 <div class="contact-info">

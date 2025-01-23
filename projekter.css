@@ -80,10 +80,8 @@ h2{
 }
 .project-container{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 100px;
-    margin: 2% 10% 3% 10%;
+    margin: 2% 5% 3% 5%;
 }
 .project-info{
     display: flex;
@@ -111,19 +109,62 @@ p{
 .project-mini-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 150px;
+    gap: 100px;
 }
 .project {
-    width: 30vw;
-    border: 1px solid black;
+    width: 40vw;
+    height:70vh;
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
     flex-direction: column;
+    gap: 15px;
 }
 .project a {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.projectImg{
-    width: 30vw;
+.projectLinkContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
+.projectImg {
+    width: 40vw;
+    height: 50vh;
+    border: 5px solid white;
+    cursor: pointer;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.modal-content {
+    position: relative;
+    border-radius: 10px;
+    top: 5%;
+    width: 90%;
+    height: 85%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+#projectIframe {
+    width: 100%;
+    height: 100%;
+}
+.close-button {
+    position: absolute;
+    top: -15px;
+    right: -50px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+  }
