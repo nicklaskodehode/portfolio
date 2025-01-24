@@ -109,7 +109,8 @@ p{
 .project-mini-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
+    column-gap: 100px;
+    row-gap: 65px;
 }
 .project {
     width: 40vw;
