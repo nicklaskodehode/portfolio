@@ -8,7 +8,13 @@ body{
 }
 h2{
     color: white;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    font-size: 18px;
+    font-family: var(--font-family);
+    color: white;
 }
 .navbar-container{
     display: flex;
@@ -75,7 +81,7 @@ h2{
     color: white;
 }
 .border {
-    background-color: black;
+    background-color: #2D2D2D;
     padding: 20px 50px;
 }
 .project-container{
@@ -169,3 +175,22 @@ p{
     color: #ffffff;
     cursor: pointer;
   }
+  .contact-info-container {
+    display: flex;
+    gap: 100px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+.contact-container{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
