@@ -56,7 +56,7 @@ h1{
 }
 .profile-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     justify-self: center;
     width: 80vw;
@@ -68,9 +68,10 @@ h1{
 }
 .profile-header{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
+    align-items: center;
     border-radius: 10px;
 }
 .profile-text-container{
