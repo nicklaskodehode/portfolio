@@ -127,6 +127,20 @@ try {
       }
     })
     .catch((error) => console.error("Error:", error));
+
+
+
+
+    // Contact Submit button
+    const contactForm = document.querySelector("#contactForm");
+    const submitBtn = document.querySelector("#submitBtn");
+    submitBtn.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      console.log(formData)
+    });
+    console.log(submitBtn)
 } catch (error) {
   console.log(error);
 }
+
