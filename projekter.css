@@ -120,7 +120,7 @@ p{
 }
 .project {
     width: 40vw;
-    height:70vh;
+    height:75vh;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;

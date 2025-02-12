@@ -124,11 +124,6 @@ p{
     line-height: 1.8;
 }
 .profile-text{
-    font-size: 22px;
-    font-family: var(--font-family);
-    color: white;
-    margin: 0;
-    line-height: 2;
     margin: 0 8% 0 8%;
 }
 .competence{
