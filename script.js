@@ -78,7 +78,7 @@ try {
   fetch(apiUrl2)
     .then((response) => response.json())
     .then((data) => {
-      const projects = ["julekalender", "nordlys", "RestaurantMenu"]; //Projects I want to show off
+      const projects = ["julekalender", "nordlys", "RestaurantMenu", "fjell-kino", "bookStore"]; //Projects I want to show off
       for (let i = 0; i < data.length; i++) {
         if (projects.includes(data[i].name)) {
           const project = document.createElement("div");
