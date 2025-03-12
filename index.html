@@ -124,7 +124,9 @@
     
     <section class="project-container">
         <div class="project-info">
-            <h2>Movie Maniac</h2>
+            <div class="projectHeader">
+                <h2>Movie Maniac</h2>
+            </div>
             <p class="project-text">På Movie Maniac kan du finde de nyeste og populærer film titler samt deres rating,
                 beskrivelse og sorter efter rating og udgivelsesdato. Dette project er lavet i React.js</p>
             <div class="link-container">
@@ -154,7 +156,9 @@
         <section class="contact-container">
             <div class="contact-wrap">
                 <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjkyvked" method="POST">
-                    <h2>Kontakt mig her!</h2>
+                    <div class="contactHeader">
+                        <h2>Kontakt mig her!</h2>
+                    </div>
                     <div class="contact-input">
                         <label>Navn:</label>
                         <input type="text" placeholder="Jane Doe" name="navn" required />
@@ -171,7 +175,7 @@
                         <label>Besked:</label>
                         <textarea placeholder="Skriv din besked her" name="besked" required></textarea>
                     </div>
-                    <button type="submit">Send</button>
+                    <button class="submitBtn" type="submit">Send</button>
                 </form>
             </div>
             <hr style="width: 80vw;">
@@ -179,18 +183,18 @@
                 <div class="contact-info">
                     <img src="./pictures/telephone.png" width="30px" alt="Linkedin icon">
                     <p>Tel:
-                        <a href="tel:+4520843745">+4520843745</a>
+                        <a class="contact-information" href="tel:+4520843745">+4520843745</a>
                     </p>
                 </div>
                 <div class="contact-info">
                     <img src="./pictures/mail.png" width="30px" alt="mail icon">
                     <p>Email:
-                        <a href="tel:email">nicklas.n@nielsen.mail.dk</a>
+                        <a class="contact-information" href="tel:email">nicklas.n@nielsen.mail.dk</a>
                     </p>
                 </div>
                 <div class="contact-info">
                     <img src="./pictures/linkedin.png" width="30px" alt="phone icon">
-                    <a href="https://www.linkedin.com/in/nicklas-nielsen-b048b7141/" target="_blank">LinkedIn</a>
+                    <a class="contact-information" href="https://www.linkedin.com/in/nicklas-nielsen-b048b7141/" target="_blank">LinkedIn</a>
                 </div>
             </div>
         </section>
