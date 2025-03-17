@@ -25,8 +25,8 @@ try {
           project.classList.add("project");
           projectHeader.textContent = data[i].name;
           projectHeader.textContent =
-            projectHeader.textContent.charAt(0).toUpperCase() +
-            projectHeader.textContent.slice(1);
+          projectHeader.textContent.charAt(0).toUpperCase() +
+          projectHeader.textContent.slice(1);
           projectDescription.textContent = data[i].description;
           projectLinkContainer.classList.add("projectLinkContainer");
           projectURL.href = data[i].html_url;
